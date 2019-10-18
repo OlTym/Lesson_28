@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add picture</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="header"><h1>Testing picture addition</h1></div>
+
+<form action="/oltym/api/add" method="POST">
+    <div id="block-string">
+        Base64String:
+        <br>
+        <textarea cols="35" name="strBase64" rows="10"></textarea>
+        <br>
+    </div>
+    <div id="block-description">
+        Picture description:
+        <br>
+        <input name="descr" type="text">
+        <br><br>
+    </div>
+
+    <div id="block-button">
+        <input type="submit" value="Submit">
+    </div>
+</form>
+</body>
+</html>
